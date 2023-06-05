@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 375px;
+}
+.container .riot-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 53px;
+}
+.container .riot-logo img {
+  width: 30%;
+  padding-top: 60px;
+}
+.container h1 {
+  font-size: 1.3rem;
+}
+.container .login-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 25px;
+}
+.container .login-space .info-input {
+  position: relative;
+  align-self: center;
+  font-weight: 700;
+}
+.container .login-space .info-input label {
+  width: 100%;
+}
+.container .login-space .info-input input {
+  font-weight: 700;
+  width: 260px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 20px 10px 10px;
+  background-color: rgba(126, 126, 126, 0.1019607843);
+}
+.container .login-space .info-input input:hover {
+  background-color: rgba(126, 126, 126, 0.1294117647);
+}
+.container .login-space .info-input input:focus {
+  background-color: #fff;
+  border: 2px solid #343434;
+}
+.container .login-space .inside-span {
+  cursor: text;
+  font-size: 0.6rem;
+  color: rgba(82, 82, 82, 0.6431372549);
+  position: absolute;
+  top: 19px;
+  left: 16px;
+  transition: ease-in-out 0.1s;
+}
+.container .login-space .span-active {
+  font-size: 0.57rem;
+  top: 6px;
+  left: 10px;
+  transition: ease-in-out 0.1s;
+}
+.container .login-space .login-with {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.container .login-space .login-with .login-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 58px;
+  height: 27px;
+}
+.container .login-space .login-with .login-button img {
+  width: 13px;
+}
+.container .login-space .login-with .bg-facebook {
+  background-color: #1877f2;
+}
+.container .login-space .login-with .facebook-icon {
+  align-items: flex-end;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.container .login-space .login-with .facebook-icon img {
+  width: 11px;
+}
+.container .login-space .login-with .google-icon {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+.container .login-space .login-with .apple-icon {
+  background-color: black;
+}
+.container .login-space .login-with .apple-icon img {
+  width: 15px;
+}
+.container .login-space .login-with .xbox-icon {
+  background-color: #107c10;
+}
+.container .stay-signed {
+  width: 100%;
+  font-size: 0.7rem;
+}
+.container .stay-signed label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+.container .stay-signed label input {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #f2f2f2;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+.container .stay-signed label input:checked {
+  background-color: rgba(175, 0, 0, 0.7725490196);
+  border: 2px solid rgba(175, 0, 0, 0);
+}
+.container .stay-signed label input::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 2px;
+  top: 2px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+.container .stay-signed label input:checked::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 7px;
+  border: 3px solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(40deg);
+  margin: -1px 2px;
+}
+.container .login {
+  width: 54px;
+  height: 54px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CF3C3F;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 83px;
+  margin-bottom: 61px;
+}
+.container .login .svg {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" fill="%23ebebeb"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px;
+  width: 30px;
+  height: 30px;
+}
+.container .disabled {
+  cursor: auto;
+  background-color: #fff;
+  border: 2px solid #ECECEC;
+}
+.container .help {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.65rem;
+  color: #b9b9b9;
+}
+.container .help span:hover {
+  color: black;
+}/*# sourceMappingURL=Login.css.map */

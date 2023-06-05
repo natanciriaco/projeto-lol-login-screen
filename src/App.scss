@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none;
+}
+
+.main{
+    display: flex;
+}
+
+
+.tela-login{
+    width: 100%;
+    background-image: url('./Imagens/telalogin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 1;
+
+    .warning{
+        background-color: #d809d8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.774);
+        width: 30px;
+        height: 30px;
+        margin: 25px 25px 0 25px;
+        transform: rotate(45deg);
+        
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    .warning-span{
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: rotate(-45deg);
+    }
+
+    @media (max-width: 460px){
+        .warning, .warning-span {
+            display: none;
+        }    
+    }
+}
